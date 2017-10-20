@@ -5,16 +5,19 @@ const logger = require("morgan");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
-mongoose.connect("mongodb://localhost/recipes"), {useMongoClient: true };
+mongoose.connect("mongodb://localhost/recipes"), { useMongoClient: true };
 
 const index = require("./routes/index");
 const dishes = require("./routes/dishes");
 
 const app = express();
-// view engine setup
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+app.use(
+  cors({
+    origin: "http://localhost:8080"
+  })
+);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

@@ -100,19 +100,24 @@ For that, you can:
 - Create the endpoint `GET /api/dishes`.
 
 At the end of this iteration, you should see the following result when you go on  `localhost:3000/api/dishes`:
-```json
+
+```json5
 [
   {
     "_id": "598c147d82ff710a38fd6027",
     "name": "Pizza",
     "image": "https://i.imgur.com/eTmWoAN.png"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
   },
   {
     "_id": "598c147d82ff710a38fd6029",
     "name": "Sweet Potato",
-    "image": "https://i.imgur.com/hGraGyR.jpg"
+    "image": "https://i.imgur.com/hGraGyR.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
   },
-  ...
+  // ...
 ]
 ```
 
